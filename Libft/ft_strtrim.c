@@ -28,10 +28,10 @@ char	*ft_strtrim(char const *s)
 	new = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (new)
 	{
-	//remove spaces from the beginning
+	//remove spaces at the beginning
 		while (s[i2] == ' ' || s[i2] == '\n' || s[i2] == '\t')
 			i2++;
-	//remove spaces from the end
+	//remove spaces at the end
 		if (i2 < max)
 			while (s[max] == ' ' || s[max] == '\n' || s[max] == '\t')
 				max--;
